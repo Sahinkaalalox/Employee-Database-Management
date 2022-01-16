@@ -1,0 +1,13 @@
+<h1 bigHeading>Welcome to AppComponent</h1>
+<users  bigHeading></users>
+<admission  *ngIf="showAdmission"></admission>
+<div>
+    <h1>
+        {{title}}
+    </h1>
+    <label [style.margin]="marginLeft">Name : </label>
+    <input [(ngModel)]="userName" (change)="onNameChange()" type="text">
+    <p>
+        Your name: {{userName}}
+    </p>
+</div>
